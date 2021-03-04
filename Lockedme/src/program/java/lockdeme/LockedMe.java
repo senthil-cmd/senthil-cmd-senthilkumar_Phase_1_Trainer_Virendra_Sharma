@@ -93,10 +93,10 @@ public class LockedMe {
 				                   +"\n\n (N)-> NO    To return Menu ");
 				String exit = sc1.next();
 				if(exit.equals("yes")||exit.equals("y")||exit.equals("YES")||exit.equals("Y")){//if yes exit the program
-					System.out.println("\n              ******THANK YOU******");	
+					System.out.println("\n              ******THANK YOU******");//exit the application	
 				}
 				else if(exit.equals("no")||exit.equals("n")||exit.equals("No")||exit.equals("N")){//if no return to main menu 
-					userinput=2;
+					userinput=2;// going back to mainmenu due to fail of do while condition
 					}
 				else{
 					System.out.println("To confirm, press Y or N ");// repeat the operation until user choose y or no 
