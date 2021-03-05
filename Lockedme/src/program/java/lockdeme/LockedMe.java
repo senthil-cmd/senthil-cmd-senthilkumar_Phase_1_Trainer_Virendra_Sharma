@@ -32,12 +32,8 @@ public class LockedMe {
 				 userinput = sc.nextInt();
 				 }
 				 else {
-					 sc.next();// if  user enter string value throw a message to enter numeric value
-					 System.out.println("please provide the correct number");
+					 sc.next();// if  user enter string value and intial userinput 0
 					 userinput=0;
-				 }
-				 if(userinput>4||userinput<=0){//if user enter the number other then option throw a message to change value 
-					 System.out.println("please provide the correct number"); 
 				 }
 				 switch(userinput){//switch statements for main menu 
 					case 1:
@@ -57,11 +53,7 @@ public class LockedMe {
 						}
 						else{
 							sc.next();
-							System.out.println("please provide the correct number");
 							userinput2=0;
-						}
-					   if(userinput2>4||userinput2<=0){
-							System.out.println("please provide the correct number");	
 						}
 						switch(userinput2){//switch statements for sub menu 
 						case 1: 
@@ -75,11 +67,17 @@ public class LockedMe {
 							break;
 						case 4:
 							System.out.println("\n Going back main menu....");
+							break;
+						default:
+							System.out.println("please provide the correct number");
 						}
 					}while(userinput2!=4||userinput2>4);//repeat the switch operation until user choose "4" for sub menu 
 					break;
 						case 3:
 							exit();
+							break;
+						default:
+							System.out.println("please provide the correct number");
 							}
 						}while(userinput!=3||userinput>3);//repeat the switch operation until user choose "3" for main menu				
 		}
